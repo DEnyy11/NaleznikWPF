@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="NaleznikWPF.HomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NaleznikWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="730" d:DesignWidth="1249">
+    <UserControl.Resources>
+        <!-- Definice stylu pro TextBlock -->
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Width="1229" Height="710">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Width="394" Height="586" Margin="336,0,0,0">
+            <!-- Použití TextBlockStyle -->
+            <TextBlock Text="Vítejte v nálezníku!" FontSize="35" Width="334" Height="46" 
+                       Style="{StaticResource TextBlockStyle}" Margin="0,10" />
+            <TextBlock x:Name="VersionLabel" FontSize="20" Text="Verze" Width="129" Height="35" 
+                       Style="{StaticResource TextBlockStyle}" />
+            <TextBlock Text="Upraveno:" FontSize="20" HorizontalAlignment="Left"  Width="129" Style="{StaticResource TextBlockStyle}" />
+            <TextBlock Text="- změna vzhledu" FontSize="20"  HorizontalAlignment="Left" Style="{StaticResource TextBlockStyle}" />
+            <TextBlock Text="- opravy textu" FontSize="20" HorizontalAlignment="Left" Style="{StaticResource TextBlockStyle}" />
+            <TextBlock Text="- vylepšení celkového chodu aplikace" HorizontalAlignment="Left" FontSize="20"  Style="{StaticResource TextBlockStyle}" />
+            <TextBlock Text="- implementace automatických aktualizací" HorizontalAlignment="Left" FontSize="20"  Style="{StaticResource TextBlockStyle}" />
+        </StackPanel>
+        <Image Height="650" Margin="440,62,-175,0" VerticalAlignment="Top" 
+               Source="/_vyr_56detik-removebg-preview.png" Opacity="0.3" />
+    </Grid>
+</UserControl>

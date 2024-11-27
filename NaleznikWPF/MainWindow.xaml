@@ -1,0 +1,108 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="NaleznikWPF.MainWindow"
+        Title="Nálezník" Height="740" Width="1500"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="False"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
+
+    <!-- Hlavní Grid -->
+    <Grid>
+        <!-- Pozadí -->
+
+        <Image Source="/old-paper-texture-brown-7dq5rsc6h7711725.jpg" Stretch="UniformToFill" Opacity="0.9"/>
+        <!-- Poloprůhledný překryv -->
+        <DockPanel>
+            <!-- Moderní Menu na levé straně -->
+            <StackPanel Background="#AA333333" DockPanel.Dock="Left" Width="250" VerticalAlignment="Stretch" >
+                <!-- Nadpis menu -->
+                <TextBlock Text="MENU" FontSize="28" FontWeight="Bold" Foreground="White" 
+                           HorizontalAlignment="Center" Margin="0,10"/>
+                <!-- Tlačítka s moderním vzhledem -->
+                <Button Content="🏠  Domů" FontSize="16" FontWeight="Bold"
+                        Margin="10" Padding="10" Height="50"
+                        Background="#FFE4B5" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+                        HorizontalAlignment="Stretch" Click="btHome_Click"
+                        >
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Content="ℹ️  Nový nález" FontSize="16" FontWeight="Bold"
+                        Margin="10" Padding="10" Height="50"
+                        Background="#FFE4B5" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+                        HorizontalAlignment="Stretch" Click="btNewFind_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Content="🔍  Hledat nález" FontSize="16" FontWeight="Bold"
+                        Margin="10" Padding="10" Height="50"
+                        Background="#FFE4B5" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+                        HorizontalAlignment="Stretch" Click="btShowFinds_click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Content="🗺️  Mapa nálezů" FontSize="16" FontWeight="Bold"
+        Margin="10" Padding="10" Height="50"
+        Background="#FFE4B5" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+        HorizontalAlignment="Stretch" Click="btMap_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Content="❓  Nápověda" FontSize="16" FontWeight="Bold"
+        Margin="10" Padding="10" Height="50"
+        Background="#FFE4B5" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+        HorizontalAlignment="Stretch" Click="btHelp_click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Content="❌  Exit" FontSize="16" FontWeight="Bold"
+                        Margin="10" Padding="10" Height="50" Foreground="Black" BorderBrush="Transparent" Cursor="Hand"
+                        HorizontalAlignment="Stretch" Click="btExit_Click" Background="Moccasin">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+
+            <!-- Obsah uprostřed -->
+            <Grid>
+                
+            </Grid>
+        </DockPanel>
+        <ContentControl Height="720" Width="1240" Name ="MainContent" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>

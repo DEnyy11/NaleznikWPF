@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="NaleznikWPF.HelpPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NaleznikWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1240">
+    <Grid>
+        <StackPanel>
+            <!-- Header -->
+            <TextBlock Text="Nápověda – Jak používat aplikaci Nálezník" 
+                           FontSize="22" 
+                           FontWeight="Bold" 
+                           Foreground="#7B3F00"
+                           Margin="0 0 0 20" TextAlignment="Center"/>
+
+            <!-- Section: Domů -->
+            <TextBlock Text="1. Domů" x:Name="tbHelpHome"  Foreground="#7B3F00" FontSize="18" FontWeight="SemiBold" Margin="0 10" />
+            <TextBlock Text="Popis: Úvodní obrazovka aplikace, kde vidíte verzi aplikace a seznam posledních aktualizací." 
+                            TextWrapping="Wrap" Margin="0 5" />
+            <TextBlock Text="Tip: Zde se zobrazí oznámení o nových funkcích nebo změnách." 
+                           FontStyle="Italic"  Margin="0 0 0 15" />
+
+            <!-- Section: Nový nález -->
+            <TextBlock Text="2. Nový nález" FontSize="18"  Foreground="#7B3F00" FontWeight="SemiBold" Margin="0 10" />
+            <TextBlock Text="Popis: Umožňuje zadat nový nález. Můžete přidat informace o lokalitě, popisu a fotografii nálezu."
+                           TextWrapping="Wrap"  Margin="0 5" />
+            <TextBlock Text="Tip: Vyplňte všechny údaje pro přesnou evidenci." 
+                           FontStyle="Italic"  Margin="0 0 0 15" />
+
+            <!-- Section: Hledat nález -->
+            <TextBlock Text="3. Hledat nález" FontSize="18" Foreground="#7B3F00" FontWeight="SemiBold" Margin="0 10" />
+            <TextBlock Text="Popis: Vyhledávání v databázi uložených nálezů podle klíčových slov, data nebo lokality."
+                           TextWrapping="Wrap"  Margin="0 5" />
+            <TextBlock Text="Tip: Použijte filtry pro rychlejší nalezení konkrétního záznamu."
+                           FontStyle="Italic" Margin="0 0 0 15" />
+
+            <!-- Section: Mapa nálezů -->
+            <TextBlock Text="4. Mapa nálezů" FontSize="18" Foreground="#7B3F00" FontWeight="SemiBold" Margin="0 10" />
+            <TextBlock Text="Popis: Zobrazuje interaktivní mapu se zaznamenanými nálezy. Kliknutím na bod zobrazíte podrobnosti."
+                           TextWrapping="Wrap"  Margin="0 5" />
+            <TextBlock Text="Tip: Mapu můžete přibližovat a posouvat."
+                           FontStyle="Italic"  Margin="0 0 0 15" />
+            <!-- Additional tips -->
+            <TextBlock Text="Další informace" Foreground="#7B3F00" FontSize="20" FontWeight="Bold" Margin="0 20 0 10" />
+            <TextBlock Text="Automatické aktualizace: Aplikace při spuštění kontroluje dostupnost nových verzí. Pokud je k dispozici aktualizace, stáhne ji a nainstaluje automaticky."
+                           TextWrapping="Wrap"  Margin="0 5" />
+            <TextBlock Text="Zálohování dat: Ujistěte se, že pravidelně zálohujete data. Můžete použít funkci exportu v nastavení aplikace."
+                           TextWrapping="Wrap"   Margin="0 5" />
+            <TextBlock Text="Podpora: Pokud narazíte na chybu nebo potřebujete pomoc, kontaktujte prosím vývojáře na daniel.vasut2@email.cz."
+                           TextWrapping="Wrap"  Margin="0 0 0 15" />
+        </StackPanel>
+    </Grid>
+</UserControl>
+

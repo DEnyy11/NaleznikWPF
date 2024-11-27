@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaleznikWPF", "NaleznikWPF\NaleznikWPF.csproj", "{F805B6EF-3EFB-4157-B52A-B997C267941A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A04BD8C-ABAB-48CE-867F-CE188E4566BA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\background-image.jpg = ..\..\..\Downloads\background-image.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "ConsoleApp1\Lib.csproj", "{865FB2F1-F967-446E-8898-6662B547AA38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F805B6EF-3EFB-4157-B52A-B997C267941A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F805B6EF-3EFB-4157-B52A-B997C267941A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F805B6EF-3EFB-4157-B52A-B997C267941A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F805B6EF-3EFB-4157-B52A-B997C267941A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865FB2F1-F967-446E-8898-6662B547AA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865FB2F1-F967-446E-8898-6662B547AA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865FB2F1-F967-446E-8898-6662B547AA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865FB2F1-F967-446E-8898-6662B547AA38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {614E202F-70AC-44AD-90F3-DE2F848CAB27}
+	EndGlobalSection
+EndGlobal
