@@ -22,6 +22,7 @@ namespace NaleznikWPF {
         public HomePage() {
             InitializeComponent();
             SetVersionLabel();
+            
         }
 
         private void SetVersionLabel() {

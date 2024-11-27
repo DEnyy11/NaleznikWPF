@@ -108,8 +108,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coin.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="Finding.cs" />
+    <Compile Include="location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

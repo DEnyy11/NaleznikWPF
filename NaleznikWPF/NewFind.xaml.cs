@@ -55,7 +55,7 @@ namespace NaleznikWPF {
                 controller.AddFinding(newFinding);
 
                 
-                MessageBox.Show("Lukáši jsi párek a zapomněl jsi napsat souřadnice","Uloženo.");
+                MessageBox.Show("Nález byl uspěšně uložen.","Uloženo.");
             }
             catch (Exception ex) {
                 MessageBox.Show($"Chyba ukládání nálezu {ex.Message}");

@@ -2,8 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data.SQLite;
+using System.Data;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.Sqlite;
@@ -48,6 +51,7 @@ namespace Lib {
                 using (var command = new SqliteCommand(createTableQuery, connection)) {
                     command.ExecuteNonQuery();
                 }
+                
             }
 
 
@@ -134,13 +138,13 @@ namespace Lib {
             using (var connection = new SqliteConnection("Data Source=" + dbPath)) {
                 connection.Open();
 
-                // Vytvoříme SQL dotaz pro vložení nového nálezu
+               
                 string insertQuery = @"
             INSERT INTO Nalezy (Nazev, Rok, Hloubka, DatumNalezu, Typ, Puda, Popis, Latitude, Longitude)
             VALUES (@Nazev, @Rok, @Hloubka, @DatumNalezu, @Typ, @Puda, @Popis, @Latitude, @Longitude)";
 
                 using (var command = new SqliteCommand(insertQuery, connection)) {
-                    // Parametry pro SQL dotaz
+                 
                     command.Parameters.AddWithValue("@Nazev", finding.Name);
                     command.Parameters.AddWithValue("@Rok", finding.Year); // Předáme rok
                     command.Parameters.AddWithValue("@Hloubka", finding.Depth);
@@ -151,10 +155,11 @@ namespace Lib {
                     command.Parameters.AddWithValue("@Latitude", finding.Location.Latitude);
                     command.Parameters.AddWithValue("@Longitude", finding.Location.Longitude);
 
-                    // Spustíme SQL dotaz
+                    
                     command.ExecuteNonQuery();
                 }
             }
         }
     }
 }
+
